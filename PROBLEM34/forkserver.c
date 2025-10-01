@@ -96,26 +96,46 @@ int main() {
 
 TERMINAL-1
 
-vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM33$ g++ server.c -o server
+vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM34$ g++ forkserver.c -o forkserver
 
-vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM33$ g++ client.c -o client
+vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM34$ g++ client.c -o client
 
-vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM33$ ./server
+vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM34$ ./forkserver
 
 Server listening on port 8080
-Client says: Hi Server, Vivek Joshi This Side..!
-Server reply: Hello...!   
+
+Client 1 connected.
+Client 1 says: Hi, I am client 1
+Server reply to client 1: Hello Client 1
+
+Client 2 connected.
+Client 2 says: Hi, I am client 2
+Server reply to client 2: Hello Client 2
+
 
 --------------------------------------------------------------------------------------------------------------
 
 TERMINAL-2
 
-vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM33$ ./client
+vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM34$ ./client
 
-You: Hi Server, Vivek Joshi This Side..!
-Server: Hello...!
+Connected to server. Type messages (type 'exit' to quit):
+
+You: Hi, I am client 1
+Server: Hello Client 1
 You: exit
 
+--------------------------------------------------------------------------------------------------------------
+
+TERMINAL-3
+
+vivekjoshi@vivekj:~/Desktop/MTECH CSE 2025/SOFTWARE SYSTEMS/HANDSON2/PROBLEM34$ ./client
+
+Connected to server. Type messages (type 'exit' to quit):
+
+You: Hi, I am client 2
+Server: Hello Client 2
+You: exit
 
 
 
